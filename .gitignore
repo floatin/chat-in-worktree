@@ -1,0 +1,5 @@
+node_modules/
+dist-tests/
+.memsearch/
+*.log
+.DS_Store

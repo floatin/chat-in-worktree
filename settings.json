@@ -1,0 +1,15 @@
+{
+  "name": "chat-in-worktree",
+  "version": "0.1.0",
+  "description": "Multi-mode worktree isolation with artifact sync",
+  "commands": ["mode"],
+  "tools": ["chat_in_worktree"],
+  "skills": [
+    "mode-discuss",
+    "mode-design",
+    "mode-experiment",
+    "mode-produce",
+    "mode-maintain",
+    "artifact-sync"
+  ]
+}

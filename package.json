@@ -1,0 +1,21 @@
+{
+  "name": "chat-in-worktree",
+  "version": "0.1.0",
+  "description": "Pi Agent extension: multi-mode worktree isolation for chat-with-doc workflow",
+  "main": "dist/extension.js",
+  "type": "module",
+  "pi": {
+    "extensions": ["dist/extension.js"]
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "build:test": "tsc -p tsconfig.test.json",
+    "test": "npm run build:test && node dist-tests/tests/run.js"
+  },
+  "dependencies": {
+    "@mariozechner/pi-coding-agent": "^0.8.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
