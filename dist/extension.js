@@ -25,7 +25,7 @@ export default function (pi) {
                 ctx.ui.notify(`Mode switch failed: ${result.error}`, "error");
                 return;
             }
-            ctx.ui.notify(`Entered ${modeName} mode (agent ${result.data?.id ?? "unknown"})`, "info");
+            ctx.ui.notify(`Entered ${modeName} mode (run ${result.data?.runId ?? result.data?.id ?? "unknown"})`, "info");
         },
     });
     pi.registerTool({
@@ -53,7 +53,7 @@ export default function (pi) {
             return {
                 content: [{
                         type: "text",
-                        text: `Spawned ${params.mode} agent in worktree. Agent ID: ${result.data?.id ?? "unknown"}`,
+                        text: `Spawned ${params.mode} agent in worktree. Run ID: ${result.data?.runId ?? result.data?.id ?? "unknown"}`,
                     }],
             };
         },
